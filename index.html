@@ -1,66 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Kids Play School</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
       font-family: 'Comic Neue', cursive;
-      background-color: #fff8f0;
+      background-image: url('images/background image.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #2d3436;
     }
+
     header {
-      background-color: #ffda79;
+      background-color: rgba(255, 218, 121, 0.95);
       padding: 1em;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       color: #2d3436;
     }
+
     nav a {
       margin: 0 15px;
       text-decoration: none;
       color: #2d3436;
       font-weight: bold;
     }
+
     .hero {
-      background: #ffeaa7;
+      background: rgba(255, 255, 255, 0.7);
       padding: 4em 1em;
       text-align: center;
+      border-radius: 20px;
+      margin: 2em auto;
+      width: 90%;
+      max-width: 800px;
     }
+
     .hero h2 {
       font-size: 2em;
       color: #d63031;
     }
+
     .hero p {
       font-size: 1.2em;
-      color: #2d3436;
     }
+
     .section {
       padding: 2em 1em;
       text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      margin: 1.5em auto;
+      width: 90%;
+      max-width: 900px;
     }
+
     .section h3 {
       color: #0984e3;
     }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
+
+    .section ul li {
+      margin: 0.5em 0;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     .gallery img {
       width: 200px;
       height: 150px;
       margin: 10px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
-      background: #fab1a0;
+      background: rgba(250, 177, 160, 0.9);
       text-align: center;
       padding: 1em;
       font-size: 0.9em;
       color: #2d3436;
+      margin-top: 2em;
     }
   </style>
 </head>
@@ -97,9 +142,9 @@
   <section id="gallery" class="section">
     <h3>Gallery</h3>
     <div class="gallery">
-      <img src="images/classroom.jpg" alt="Classroom">
-      <img src="images/playarea.jpg" alt="Play Area">
-      <img src="images/activity.jpg" alt="Activity Time">
+      <img src="images/classroom.jpg" alt="Classroom" />
+      <img src="images/playarea.jpg" alt="Play Area" />
+      <img src="images/activity.jpg" alt="Activity Time" />
     </div>
   </section>
 
